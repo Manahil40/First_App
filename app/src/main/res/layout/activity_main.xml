@@ -7,46 +7,48 @@
     android:background="@drawable/bg5"
     tools:context=".MainActivity">
 
-    <RadioButton
-        android:id="@+id/even"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="324dp"
-        android:text="Even Number"
-        android:textColor="#3FA674"
-        android:textSize="25sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <RadioButton
-        android:id="@+id/odd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Odd Number"
-        android:textColor="#3FA674"
-        android:textSize="25sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintEnd_toEndOf="@+id/even"
-        app:layout_constraintStart_toStartOf="@+id/even"
-        app:layout_constraintTop_toBottomOf="@+id/even" />
-
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="301dp"
-        android:layout_height="153dp"
-        android:layout_marginTop="108dp"
-        android:text="Is this Number Even or Odd"
+        android:id="@+id/txtQuestions"
+        android:layout_width="338dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="156dp"
+        android:text="Is Even or Odd?"
         android:textAlignment="center"
         android:textColor="#278E83"
         android:textSize="35sp"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:background="#1E8E82"
+        android:text="EVEN"
+        android:textColor="#9BD6DD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:background="#1E8E82"
+        android:text="ODD"
+        android:textColor="#9BD6DD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
