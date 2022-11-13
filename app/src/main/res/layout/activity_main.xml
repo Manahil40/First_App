@@ -11,27 +11,13 @@
         android:id="@+id/txtQuestions"
         android:layout_width="338dp"
         android:layout_height="111dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="236dp"
         android:textAlignment="center"
         android:textColor="#278E83"
         android:textSize="35sp"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/even"
-        android:layout_width="95dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="348dp"
-        android:background="#1E8E82"
-        android:text="EVEN"
-        android:textColor="#9BD6DD"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -40,7 +26,7 @@
         android:id="@+id/odd"
         android:layout_width="95dp"
         android:layout_height="54dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="416dp"
         android:layout_marginEnd="84dp"
         android:background="#1E8E82"
         android:text="ODD"
@@ -50,6 +36,67 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/even"
         app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/even"
+        android:layout_width="95dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="416dp"
+        android:background="#1E8E82"
+        android:text="EVEN"
+        android:textColor="#9BD6DD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Nextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="156dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textQNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textQNo"
+        android:layout_width="156dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="40dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/txtQuestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textAns"
+        android:layout_width="157dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/Nextbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

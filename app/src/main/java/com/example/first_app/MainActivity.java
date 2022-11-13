@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnEven, btnOdd;
     TextView txtQ, txtans;
     int numbers = 0;
-
+    int n = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,17 +34,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void GenerateNumbers(){
 
         Random rand = new Random();
-        numbers = rand.nextInt(100)+1;
-        txtQ.setText(numbers+" Is Even or Odd?");
 
-        if(numbers % 2 == 0){
+        if (n <=5) {
+            numbers = rand.nextInt(100) + 1;
+            txtQ.setText("Question "+n);
+            txtQ.setText(numbers + " Is Even or Odd?");
 
+            if (numbers % 2 == 0) {
+
+            } else {
+
+            }
         }
-
-        else{
-
-        }
-
     }
     @Override
     public void onClick(View view) {
