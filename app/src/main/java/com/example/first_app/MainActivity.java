@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txtQ = findViewById(R.id.txtQuestions);
         txtQNo = findViewById(R.id.textQNo);
         txtscore = findViewById(R.id.textScore);
-        txtAns = findViewById(R.id.textScore);
+        txtAns = findViewById(R.id.textAns);
 
         btnEven = findViewById(R.id.even);
         btnEven.setOnClickListener(this);
@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Random rand = new Random();
 
         if (n <=5) {
-            n++;
             numbers = rand.nextInt(100) + 1;
             txtQNo.setText("Question # "+n);
             txtQ.setText(numbers + " is Even or Odd?");
@@ -59,30 +58,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.even:
-                if (ans == "Even") {
-                    txtAns.setText("Correct Answer!");
-                    /*textViewAnswer.setBackgroundColor(getResources().getColor(R.color.green));*/
-                    score++;
-                    txtscore.setText("Score: " + score);
-                } else {
-                    txtAns.setText("Incorrect Answer!");
-                }
-                break;
+        if (n <=5) {
+            switch (view.getId()) {
+                case R.id.even:
+                    if (ans == "Even") {
+                        txtAns.setText("Correct Answer!");
+                        /*textViewAnswer.setBackgroundColor(getResources().getColor(R.color.green));*/
+                        score++;
+                        txtscore.setText("Score: " + score);
+                    } else {
+                        txtAns.setText("Incorrect Answer!");
+                    }
+                    break;
 
-            case R.id.odd:
-                if (ans == "Odd") {
-                    txtAns.setText("Correct Answer!");
-                    /*textViewAnswer.setBackgroundColor(getResources().getColor(R.color.green));*/
-                    score++;
-                    txtscore.setText("Score: " + score);
-                } else {
-                    txtAns.setText("Incorrect Answer!");
-                }
-                break;
+                case R.id.odd:
+                    if (ans == "Odd") {
+                        txtAns.setText("Correct Answer!");
+                        /*textViewAnswer.setBackgroundColor(getResources().getColor(R.color.green));*/
+                        score++;
+                        txtscore.setText("Score: " + score);
+                    } else {
+                        txtAns.setText("Incorrect Answer!");
+                    }
+                    break;
+            }n++;
+            GenerateNumbers();
         }
-        GenerateNumbers();
     }
 
 }
