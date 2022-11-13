@@ -4,27 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/questionbox"
-        android:layout_width="326dp"
-        android:layout_height="143dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+    tools:context=".MainActivity"
+    android:background="@drawable/bg5">
 
     <RadioButton
         android:id="@+id/even"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="324dp"
         android:text="Even Number"
-        app:layout_constraintStart_toStartOf="@+id/questionbox"
-        tools:layout_editor_absoluteY="362dp"
+        android:textColor="#3FA674"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <RadioButton
@@ -33,9 +28,26 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Odd Number"
+        android:textColor="#3FA674"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="@+id/even"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/even"
         app:layout_constraintTop_toBottomOf="@+id/even" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="301dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="108dp"
+        android:text="Is this Number Even or Odd"
+        android:textAlignment="center"
+        android:textColor="#278E83"
+        android:textSize="35sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
