@@ -12,7 +12,6 @@
         android:layout_width="338dp"
         android:layout_height="111dp"
         android:layout_marginTop="156dp"
-        android:text="Is Even or Odd?"
         android:textAlignment="center"
         android:textColor="#278E83"
         android:textSize="35sp"
@@ -23,9 +22,9 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/even"
+        android:layout_width="95dp"
+        android:layout_height="54dp"
         android:layout_marginTop="348dp"
         android:background="#1E8E82"
         android:text="EVEN"
@@ -38,17 +37,18 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/odd"
+        android:layout_width="95dp"
+        android:layout_height="54dp"
         android:layout_marginTop="348dp"
+        android:layout_marginEnd="84dp"
         android:background="#1E8E82"
         android:text="ODD"
         android:textColor="#9BD6DD"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.345"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/even"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 

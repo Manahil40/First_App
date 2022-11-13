@@ -23,13 +23,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         txtQ = findViewById(R.id.txtQuestions);
+        btnEven = findViewById(R.id.even);
+        btnEven.setOnClickListener(this);
+        btnOdd = findViewById(R.id.odd);
+        btnOdd.setOnClickListener(this);
 
+        GenerateNumbers();
     }
 
     private void GenerateNumbers(){
 
         Random rand = new Random();
-        numbers = rand.nextInt();
+        numbers = rand.nextInt(100)+1;
+        txtQ.setText(numbers+" Is Even or Odd?");
 
         if(numbers % 2 == 0){
 
