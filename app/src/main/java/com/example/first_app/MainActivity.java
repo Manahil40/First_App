@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnEven, btnOdd, btnNext;
+    Button btnEven, btnOdd;
     TextView txtQ, txtQNo, txtscore, txtAns;
     int numbers = 0, n = 1, score = 0;
     String ans = "";
@@ -34,9 +34,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnOdd = findViewById(R.id.odd);
         btnOdd.setOnClickListener(this);
 
-        btnNext = findViewById(R.id.Nextbtn);
-        btnNext.setOnClickListener(this);
-
         GenerateNumbers();
     }
 
@@ -44,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Random rand = new Random();
 
-        if (n <=5) {
+        if (n <=10) {
             numbers = rand.nextInt(100) + 1;
             txtQNo.setText("Question # "+n);
             txtQ.setText(numbers + " is Even or Odd?");
@@ -58,12 +55,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View view) {
-        if (n <=5) {
+        if (n <=10) {
             switch (view.getId()) {
                 case R.id.even:
                     if (ans == "Even") {
                         txtAns.setText("Correct Answer!");
-                        /*textViewAnswer.setBackgroundColor(getResources().getColor(R.color.green));*/
                         score++;
                         txtscore.setText("Score: " + score);
                     } else {
@@ -74,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.odd:
                     if (ans == "Odd") {
                         txtAns.setText("Correct Answer!");
-                        /*textViewAnswer.setBackgroundColor(getResources().getColor(R.color.green));*/
                         score++;
                         txtscore.setText("Score: " + score);
                     } else {
